@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN UP PAGE</title>
+    <style>
+      #container {
+        width: 30%;
+        height: auto;
+        background-color: #48c9b0;
+        margin: auto;
+        text-align: center;
+        color: white;
+      }
+      #boxes {
+        width: 75%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 60px);
+        gap: 15px;
+      }
+      #boxes > button {
+        font-size: 15px;
+        border: none;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background-color: #17a589;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+      }
+      #container > p {
+
+        padding-top: 50px;
+        font-size: 30px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+      }
+      #boxes:last-child {
+        padding-bottom: 60px;
+      }
+
+      #boxes > input {
+        font-size: 15px;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>- Visitor -</p>
+      <div id="boxes">
+        <input type="text" placeholder="Full name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Organisation" />
+        <button>SIGN UP</button>
+        <button>RETURN</button>
+      </div>
+    </div>
+  </body>
+</html>
