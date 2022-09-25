@@ -17,29 +17,36 @@
         align-items: center;
     }
 
-    .navbar>div{
+    .navbar a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar>a>div{
         height: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .navbar>div:nth-child(1){
+    .navbar>a>div:nth-child(1){
         width: 120px;
         
     }
     .navbar>div:nth-child(2){
         width: 400px;
+        display: flex;
+        justify-content: space-around;
     }
 </style>
 </head>
 <body>
     <div class="navbar"> 
-        <div>Reebok</div>
+        <a href="navbar.html"><div>Reebok</div></a>
         <div>
-            <div>Men</div>
-            <div>Women</div>
-            <div>Login</div>
-            <div>Signup</div>
+            <a href="mens.html"><div>Men</div></a>
+            <a href="#"><div>Women</div></a>
+            <a href="logIn.html"><div>Login</div></a>
+            <a href="signup.html"><div>Signup</div></a>
         </div>
     </div>
 </body>
